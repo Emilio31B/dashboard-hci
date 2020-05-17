@@ -21,7 +21,17 @@
 <div id="demo"></div>
 <script>
     function a(){
-        var elemento = '<iframe width="100%" aria-orientation="undefined" height="100%" src="https://app.powerbi.com/reportEmbed?reportId=993d33a0-405f-4cd4-ae9a-1aa271a570ad&autoAuth=true&ctid=e46d3862-8595-45d1-9b69-630798d8902d&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXNvdXRoLWNlbnRyYWwtdXMtcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D" frameborder="0" allowFullScreen="true"></iframe>'
+
+        var width = window.innerWidth
+        || document.documentElement.clientWidth
+        || document.body.clientWidth;
+
+        var height = window.innerHeight
+        || document.documentElement.clientHeight
+        || document.body.clientHeight;
+
+
+        var elemento = '<iframe width="'+ width +' aria-orientation="undefined" height="'+height+'" src="https://app.powerbi.com/reportEmbed?reportId=993d33a0-405f-4cd4-ae9a-1aa271a570ad&autoAuth=true&ctid=e46d3862-8595-45d1-9b69-630798d8902d&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXNvdXRoLWNlbnRyYWwtdXMtcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D" frameborder="0" allowFullScreen="true"></iframe>'
         document.getElementById("demo").innerHTML = elemento;
     }
 </script>
