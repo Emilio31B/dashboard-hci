@@ -1,5 +1,7 @@
 body{
-    background: turquoise;  
+    /* background: turquoise;   */
+    background: url("./dashboardhci2.png") no-repeat left center fixed;
+    
 }
 h1,p{
     color: black;
