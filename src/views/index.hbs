@@ -5,7 +5,7 @@
         </div>
     </div>
 </div>
-<iframe width="210" aria-orientation="undefined" height="210" src="https://app.powerbi.com/reportEmbed?reportId=993d33a0-405f-4cd4-ae9a-1aa271a570ad&autoAuth=true&ctid=e46d3862-8595-45d1-9b69-630798d8902d&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXNvdXRoLWNlbnRyYWwtdXMtcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D" frameborder="0" allowFullScreen="true"></iframe>
+{{!-- <iframe width="210" aria-orientation="undefined" height="210" src="https://app.powerbi.com/reportEmbed?reportId=993d33a0-405f-4cd4-ae9a-1aa271a570ad&autoAuth=true&ctid=e46d3862-8595-45d1-9b69-630798d8902d&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXNvdXRoLWNlbnRyYWwtdXMtcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D" frameborder="0" allowFullScreen="true"></iframe> --}}
 <div class="card" style="margin-right: -100%;">
     <div class="card-header">Integrantes: </div>
     <div class="card-body">
@@ -15,5 +15,14 @@
         <div>*Maria Escobedo - 20172103</div>
         <div>*Martin Adrianzen - 20160017</div>
         <div>*Natali Yali - 20171731</div>
+        <button onclick="a()">Ver datos</button>
     </div>
 </div>
+<div id="demo"></div>
+<script>
+    function a(){
+        var elemento = '<iframe width="100%" aria-orientation="undefined" height="100%" src="https://app.powerbi.com/reportEmbed?reportId=993d33a0-405f-4cd4-ae9a-1aa271a570ad&autoAuth=true&ctid=e46d3862-8595-45d1-9b69-630798d8902d&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXNvdXRoLWNlbnRyYWwtdXMtcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D" frameborder="0" allowFullScreen="true"></iframe>'
+        document.getElementById("demo").innerHTML = elemento;
+    }
+</script>
+
